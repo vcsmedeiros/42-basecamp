@@ -1,5 +1,5 @@
 #include <unistd.h>
-
+// iterative
 void	assign_number(char *number)
 {
 	int		i;
