@@ -1,0 +1,11 @@
+Escreva uma linha de comando que procure na pasta atual e em todas as subpastas
+todos os arquivos cujos nomes terminam com ".sh"(sem as aspas) e que só exiba os
+seus nomes, sem o .sh.
+
+find . -type f -name *.sh
+	comando usado para procurar ARQUIVOS .sh na pasta atual e subpastas
+
+xargs basename -s .sh
+	comando xargs usado para tratar o resultado do comando anterior para que o
+	comando basename possa receber a output e tratar, tirando o sufixo e o dire-
+	tório
